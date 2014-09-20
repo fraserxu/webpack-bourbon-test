@@ -8,8 +8,7 @@ module.exports = {
   },
   module: {
     loaders: [
-      { test: /\.css$/, loader: 'style-loader!css-loader' },
-      { test: /\.scss$/, loader: "style!css!sass?includePaths[]=" + JSON.stringify(bourbon) }
+      { test: /\.scss$/, loader: "style!css!sass?includePaths[]=" + bourbon }
     ]
   },
   resolve: {
